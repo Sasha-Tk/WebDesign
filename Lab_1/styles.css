@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    background-color: yellow;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.background {
+    background: url("images/pic1.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1080px;
+    position: absolute;
+
+}
+
+.text {
+    background: rgba(0, 0, 0, 0.65);
+    height: 760px;
+    left: 1300px;
+    top: 160px;
+    position: absolute;
+    border: 5px solid rgba(0, 0, 0, 0);
+    background-size: 650px 700px;
+    color: white;
+    font-size: 14px;
+    min-width: 400px;
+    max-width: 700px;
+    padding: 5px;
+    text-align: justify-all;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    margin-left: 5px;
+}
+
+.cyberpunk_logo {
+    width: 600px;
+    height: auto;
+    left: 100px;
+    top: 10px;
+    position: absolute;
+}
+
+.cyberpunk_logo:hover {
+    cursor: text;
+    filter: blur(2px);
+}
+
+.list {
+
+    top: 0px;
+    left: 850px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    border-bottom-left-radius: 30px;
+}
+
+
+li {
+    margin: 15px;
+    border: 4px solid black;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: #FCED0A;
+    list-style-type: none;
+    opacity: 0.85;
+    font-size: 20px;
+    display: inline;
+}
+
+li:hover {
+    background-color: #FCED0A;
+    opacity: 1;
+    color: black;
+    transition: opacity 0.2s linear;
+    cursor: pointer;
+}
+
+
+th {
+    background-color: black;
+    color: #00F0FF;
+    text-align: center;
+    text-transform: uppercase;
+    width: 210px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.rt_h {
+    color: #80FF00;
+}
+
+.first_column {
+    background-color: #FCED0A;
+    color: black;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+
+}
+
+.first_el {
+    background-color: black;
+    width: 130px;
+    height: 50px;
+}
+
+table {
+    position: relative;
+    border: 3px solid black;
+    border-spacing: 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    top: 850px;
+    margin: 0 auto;
+
+}
+
+td {
+    border: 2px solid black;
+    background-color: #00F0FF;
+    text-align: center;
+    width: 200px;
+    height: 70px;
+}
+
+.rt_el {
+    background-color: #80FF00;
+}
+
+#table_title {
+    margin: auto auto;
+    top: 920px;
+    position: relative;
+    width: 810px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    right: 0;
+
+}
+
+.video {
+    width: 640px;
+    height: 360px;
+    top: 190px;
+    position: absolute;
+
+    border: 5px solid black;
+    transform: scale(0.8, 0.8);
+
+}
+
+.input_email {
+    position: absolute;
+    top: 2000px;
+    left: 1000px;
+
+}
+
+#input{
+    height: 30px;
+    background: none;
+    border: none;
+    border-bottom: 4px solid rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+    outline: none;
+    font-size: 20px;
+    transition: border 2ms ease-out;
+    caret-color:#00F0FF;
+}
+#input:focus{
+    border: none;
+    border-bottom: 4px solid black;
+    margin-bottom: 50px;
+}
+
+#email_button_submit{
+    margin-left: 50px;
+    background:none;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+}
+#email_button_submit:focus{
+    outline: none;
+}
+#email_button_submit:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+#author{
+    width: 110px;
+    top:1150px;
+    left:5%;
+    position: relative;
+}
+rt{
+    text-align: center;
+    font-size: 16px;
+}
