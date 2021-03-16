@@ -1,0 +1,379 @@
+body {
+    background: linear-gradient(#36171D, #070A0F) fixed;
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+* {
+    margin: 0;
+}
+
+.load * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #79B2AE;
+}
+
+.MenuElement {
+    list-style-type: none;
+    padding-bottom: 5px;
+    font-size: 20px;
+    color: #79B2AE;
+}
+
+.UpperMenu {
+    display: flex;
+    width: 45%;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    position: relative;
+}
+
+@keyframes TextAnimation {
+    0%{
+        background-image: linear-gradient(90deg,#2471D5,#9C29F3);
+    }
+    25%{
+        background-image: linear-gradient(180deg,#2471D5,#9C29F3);
+    }
+    50%{
+        background-image: linear-gradient(270deg,#2471D5,#9C29F3);
+    }
+    75%{
+        background-image: linear-gradient(360deg,#2471D5,#9C29F3);
+    }
+    100%{
+        background-image: linear-gradient(90deg,#2471D5,#9C29F3);
+    }
+}
+
+#author {
+    background-image: linear-gradient(#F13B3F,#79B2AE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: TextAnimation 0.7s linear infinite;
+}
+.MenuElement:first-child {
+    border-bottom: 3px solid #79B2AE;
+
+}
+
+.MenuElement:hover {
+    border-bottom: 3px solid #79B2AE;
+    cursor: pointer;
+}
+
+.TableImg {
+    height: 375px;
+}
+
+
+#LifePaths {
+    text-align: left;
+    color: #F13B3F;
+    font-size: 18px;
+    text-shadow: #E05C55 0 0 5px;
+
+}
+
+td {
+    padding-left: 40px;
+}
+
+td:first-child {
+    padding-left: 0;
+}
+
+.Table {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.Back {
+    position: absolute;
+    color: #F13B3F;
+    text-shadow: #E05C55 0 0 5px;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.FrontSide {
+    backface-visibility: hidden;
+    transition: 0.5s linear;
+
+}
+
+.BackSide {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 0.5s linear;
+
+}
+
+
+.BackImage {
+    height: 375px;
+    position: absolute;
+}
+
+.Path {
+    width: 100%;
+    position: relative;
+    perspective: 500px;
+}
+
+.Path:hover .FrontSide {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.Path:hover .BackSide {
+    transform: rotateY(360deg);
+    backface-visibility: hidden;
+}
+
+.Styles {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 95%;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.StylesImg {
+    height: 375px;
+    border: 2px solid #F13B3F;
+}
+
+.CBFont {
+    color: #F13B3F;
+    text-shadow: #E05C55 0 0 5px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 5px;
+
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+
+.StylesTitle {
+    top: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #79B2AE;
+    font-size: 35px;
+}
+
+.TableTitle {
+    top: 12%;
+    position: absolute;
+    left: 50%;
+    color: #79B2AE;
+    font-size: 35px;
+    transform: translate(-50%, 0);
+
+}
+
+
+s {
+    text-decoration-color: #F13B3F;
+}
+
+.CyberwareImg {
+    height: 200px;
+    border: 2px solid #F13B3F;
+    position: fixed;
+    transition: 0.5s;
+}
+
+.Cyberware {
+    position: absolute;
+    top: 180%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.CyberwareTitle {
+    top: 155%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #79B2AE;
+    font-size: 35px;
+}
+
+.SubTable {
+    width: 100%;
+    font-size: 20px;
+    color: #79B2AE;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-top: none;
+    padding-top: 0;
+    transform: translateY(-7px);
+
+}
+
+.Rare, .Epic, .Legendary {
+    text-align: left;
+}
+
+.Rare {
+    color: #2471D5;
+}
+
+.Epic {
+    color: #9C29F3;
+}
+
+.Legendary {
+    color: #F99825;
+}
+
+#CyberwareTableTitles {
+    color: #F13B3F;
+    text-shadow: #E05C55 0 0 5px;
+    text-align: left;
+}
+
+.ImgEl {
+    padding-right: 0;
+}
+
+.ElWithSubTable {
+    padding-right: 0;
+}
+
+.FirstCoords, .SecondCoords, .ThirdCoords {
+    border: 2px solid #F13B3F;
+    width: 355px;
+    height: 200px;
+}
+
+.FirstEl:hover .FirstImg {
+    transform: translate(-355px, 0);
+}
+
+.SecondEl:hover .SecondImg {
+    transform: translate(0, -200px);
+}
+
+.ThirdEl:hover .ThirdImg {
+    transform: translate(355px, 0);
+}
+
+.input_email {
+    position: absolute;
+    top: 250%;
+    left: 50%;
+}
+
+#input {
+    height: 30px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #79B2AE;
+    margin-bottom: 50px;
+    outline: none;
+    font-size: 20px;
+    transition: border 2ms ease-out;
+    caret-color: #00F0FF;
+    color: #F99825;
+}
+
+#input:focus {
+    border: none;
+    border-bottom: 2px solid #79B2AE;
+    margin-bottom: 50px;
+}
+
+#email_button_submit {
+    margin-left: 50px;
+    background-image: linear-gradient(#79B2AE, #79B2AE);
+    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    border: 2px solid #F13B3F;
+    border-radius: 10px;
+}
+
+#email_button_submit:focus {
+    outline: none;
+}
+
+#email_button_submit:hover {
+    background-image: linear-gradient(#F13B3F, #F13B3F);
+}
+
+#MoreInfo {
+    color: #79b2ae;
+}
+
+progress {
+    position: absolute;
+    top: 251.5%;
+    left: 70%;
+    height: 5px;
+    width: 300px;
+    background-color: #3A1718;
+}
+
+progress::-webkit-progress-bar {
+    background: white;
+}
+
+progress::-webkit-progress-value {
+    background: #F13B3F;
+}
+
+progress:after {
+    content: '50%';
+    left: 45%;
+    bottom: 30px;
+    position: relative;
+    color: #F13B3F;
+}
+
+#author{
+    position: relative;
+    top:267%;
+    left:5%;
+    width: 110px;
+    color: #F13B3F;
+}
+
+h3{
+    position: absolute;
+    top:270%;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding-bottom: 1%;
+    color: #F13B3F;
+}
+mark{
+    color:#F13B3F ;
+    background-color: rgba(121,178,174,0.1);
+}
