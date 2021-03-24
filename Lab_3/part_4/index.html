@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <title>Lab_3_4</title>
+    <style>
+        body {
+            background: url("../images/morpheus-wallpaper.jpg") fixed;
+            background-size: 100%;
+        }
+
+        button{
+            height: 120px;
+            width: 400px;
+            margin-left: 40px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 10px #eee;
+            border-radius: 40px;
+            display: block;
+            font-family: 'Pangolin', cursive;
+            font-size: 30px;
+
+        }
+        button:focus{
+            outline: none;
+        }
+        button:hover{
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+        button:first-child {
+
+            margin-left: 0;
+            background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%);
+            transform: rotate(-45deg) scale(.4) translate(-115%,370%);
+
+        }
+        button:nth-child(2){
+            background-image: linear-gradient(to right, #005C97 0%, #363795  51%, #005C97  100%);
+            transform: rotate(45deg) scale(.4) translate(105%,400%);
+        }
+
+
+        div{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            top:50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button id="firstButton" onclick="firstButtonClick()" >BUTTON №1</button>
+    <button id="secondButton" onclick="secondButtonClick()">BUTTON №2</button>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
