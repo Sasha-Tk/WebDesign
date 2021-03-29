@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_7_1</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right , black, white);
+            background-size: 400%;
+        }
+        .main {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .buttons{
+            padding-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        button{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <input id="inputForString" type="text" size="30">
+    <div class="buttons">
+        <button type="submit" id="button1ForInput">Кнопка 1</button>
+        <button type="submit" id="button2ForInput">Кнопка 2</button>
+    </div>
+    <script src="javascript.js"></script>
+</div>
+</body>
+</html>
